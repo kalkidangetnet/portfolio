@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkidan Getnet</title> 
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="Kalkidan Getnet Logo">
+            </a>                
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home section">
+            <div class="video-container">
+                <video id="bg-video" autoplay muted loop playsinline>
+                    <source src="assets/bgvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+                <div class="container">
+                    <div class="home-content">
+                        <div class="home-text">
+                            <h1 class="title">Hi, I'm <span class="animated-text"><span class="letter">K</span><span class="letter">a</span><span class="letter">l</span><span class="letter">k</span><span class="letter">i</span><span class="letter">d</span><span class="letter">a</span><span class="letter">n</span></span></h1>
+                            <h2 class="typed-caption">
+                                <span id="typed-text" style="font-size: 2.5rem;"></span><span id="cursor">|</span>
+                            </h2>
+                            <p class="description">Passionate about Embedded systems, Circuit Design, AI, and Robotics.</p>
+                            <div class="buttons home-buttons">
+                                <a href="#contact">Contact Me</a>
+                                <a href="https://drive.google.com/file/d/1ZJbl7bYUqPMNbzANTBc6ZpUwUb6YKI0t/view?usp=drive_link" target="_blank">
+                                    <i class="fas fa-download"></i> Resume
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home-img">
+                            <img src="assets/images/profile.jpg" alt="Kalkidan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+
+                <div class="card profile-card">
+                    <h3 class="card-title"><i class="fa fa-user"></i> Profile</h3>
+                    <p>Third-year <strong>Electrical Engineering Student</strong> with a passion for Embedded Systems, AI, Robotics, and Circuit Design. Love creating smart devices using IoT, Arduino, and electronics — building solutions that make things smarter truly excites me. Actively learning and building smart devices using hardware-software integration. Enthusiastic about automation and intelligent systems.</p>
+                    <p>When I’m not building or learning something new, I enjoy reading books and participating in CTF challenges.</p>
+                    <p><strong>Key skills:</strong></p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>MATLAB</span>
+                        <span>C++</span>
+                        <span>Arduino</span>
+                        <span>IoT Development</span>
+                    </div>
+                </div>
+
+                <div class="card education-card">
+                    <h3 class="card-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <ul class="timeline">
+                        <li>
+                            <h4>B.Sc. in Electrical Engineering Technology</h4>
+                            <p>Higher Colleges of Technology, Sharjah, UAE</p>
+                            <span>Sep 2023 – Present | GPA: 3.99</span>
+                        </li>
+                        <li>
+                            <h4>High School Diploma</h4>
+                            <p>Ethio National School, Addis Ababa, Ethiopia</p>
+                            <span>Sep 2018 – Jun 2022 | GPA: 4.0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects-tabs">
+                <button class="tab-button active" onclick="showProjects('group')">Group Projects</button>
+                <button class="tab-button" onclick="showProjects('personal')">Personal Projects</button>
+            </div>
+
+            <div id="group-projects">
+                <div class="project-cards-container">
+                    <div class="project-card">
+                        <img src="assets/images/project1.png" alt="Project Image" class="project-img">
+                        <h3 class="project-title">Data Driven AWE approach</h3>
+                        <p class="project-description">A smart AWE prototype using a helium balloon and ESP32 to collect real-time environmental data, with RL model adjusting altitude for optimal wind energy capture.</p>
+                        <a href="assets/sophomore-report.pdf" target="_blank" class="project-button">View more</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">[Image Here]</div>
+                        <h3 class="project-title">Project Title 2</h3>
+                        <p class="project-description">Brief description of the group project goes here.</p>
+                        <a href="#" class="project-button">View more</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">[Image Here]</div>
+                        <h3 class="project-title">Project Title 3</h3>
+                        <p class="project-description">Brief description of the group project goes here.</p>
+                        <a href="#" class="project-button">View more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-content hidden" id="personal-projects">
+                <p style="color:rgb(255, 255, 255); font-size: 50px; padding-bottom: 400px;">Coming soon...</p>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2 class="section-title">Achievements</h2>
+
+            <div class="slider">
+                <div class="item">
+                    <img src="assets/images/award6.png" alt="Award Image">
+                    <h3>2nd Place - HCT Cody MATLAB Challenge</h3>
+                    <p class="slider-description">Recognized for solving MATLAB programming challenges in a campus-wide competition.</p>
+                </div>
+                <div class="item">
+                    <img src="assets/images/award5.jpg" alt="Award Image">
+                    <h3>2nd Place - Imagine Cup UAE</h3>
+                    <p class="slider-description">Our team secured 2nd place in UAE Imagine Cup for the project Lexy.</p>
+                </div>
+                <div class="item">
+                    <img src="assets/images/award4.jpg" alt="Award Image">
+                    <h3>2nd Place - UAE Hackathon 8th Edition</h3>
+                    <p class="slider-description">Developed an innovative AI solution with a team and presented it to top national evaluators.</p>
+                </div>
+                <div class="item">
+                    <img src="assets/images/award3.png" alt="Award Image">
+                    <h3>Semifinalist - Imagine Cup 2025</h3>
+                    <p class="slider-description">Reached the global semifinals stage of Microsoft Imagine Cup for the project Lexy - an AI assistive solution for people with dyslexia.</p>
+                </div>
+                <div class="item">
+                    <img src="assets/images/award2.jpg" alt="Award Image">
+                    <h3>3rd Place - UAE Hackathon 7th Edition</h3>
+                    <p class="slider-description">Received national recognition for our AI soltion, RAFEK - a carbon footprint calculator.</p>
+                </div>
+                <div class="item">
+                    <img src="assets/images/award1.png" alt="Award Image">
+                    <h3>Full Scholarship - UAE Ministry of Education</h3>
+                    <p class="slider-description">Awarded a full scholarship to study at HCT based on academic excellence.</p>
+                </div>
+                <button id="next">></button>
+                <button id="prev"><</button>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="certificates-container">
+                <div class="certificate-card">
+                    <img src="assets/images/ibm.png" alt="Certificate Image" class="certificate-img">
+                    <p class="certificate-title">Machine Learning Specialization</p>
+                    <a href="#" target="_blank" class="certificate-button">View link</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/michigan.jpg" alt="Certificate Image" class="certificate-img">
+                    <p class="certificate-title">Python Specialization</p>
+                    <a href="#" target="_blank" class="certificate-button">View link</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/microsoft.png" alt="Certificate Image" class="certificate-img">
+                    <p class="certificate-title">Power Platform Fundamentals</p>
+                    <a href="https://www.credly.com/badges/a867d70b-f207-4253-a7e3-3fcaf2f101af" target="_blank" class="certificate-button">View link</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/microsoft.png" alt="Certificate Image" class="certificate-img">
+                    <p class="certificate-title">Azure AI Fundamentals</p>
+                    <a href="https://www.credly.com/badges/5ab3493e-f1dd-4a70-b2fa-35bfd4653765" target="_blank" class="certificate-button">View link</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/kaust.jpg" alt="Certificate Image" class="certificate-img">
+                    <p class="certificate-title">Intro and Advanced AI Training</p>
+                    <a href="https://www.linkedin.com/in/kalkidan-getnet/details/certifications/1751237624247/single-media-viewer/?profileId=ACoAAFNCeNQBtp2pB4YvsFYM7svFkJXTVYjE0Dg" target="_blank" class="certificate-button">View link</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/deeplearning.png" alt="Certificate Image" class="certificate-img">
+                    <p class="certificate-title">Mathematics for Machine Learning</p>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/SUZISZ4SAKOD" target="_blank" class="certificate-button">View link</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in touch</h2>
+                    <p>I'm open to opportunities, collaborations, or just a friendly chat. Let's connect!</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kalkidan-getnet/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:kalkidan.getnet@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+971568612068" target="_blank"><i class="fas fa-phone-alt"></i></a>
+                        <a href="https://github.com/m3li4n" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <label>Name</label>
+                        <input type="text" id="name" required />
+
+                        <label>Your email</label>
+                        <input type="email" id="email" required />
+
+                        <label>Your message</label>
+                        <textarea id="message" rows="5" required></textarea>
+
+                        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>    
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Kalkidan Getnet. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>   
+</html>
