@@ -806,7 +806,7 @@ textarea:-webkit-autofill {
 }
 
 /* Small screens */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .nav-menu {
     position: fixed;
     top: 520vh; 

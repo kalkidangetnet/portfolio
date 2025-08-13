@@ -154,6 +154,17 @@ prev.onclick = function(){
 
 
 
+// Certificates Scroll Reveal
+ScrollReveal().reveal('.certificate-card', {
+  origin: 'bottom',      
+  distance: '40px',      
+  duration: 800,         
+  easing: 'ease-out',    
+  interval: 150,         
+});
+
+
+
 //Back to Top Button
 const backToTopBtn = document.getElementById("backToTopBtn");
 const scrollFunction = () => {
